@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\title{Laboratorio 02a: Estructura Secundaria en ARN}
+\author{Frank Roger Salas Ticona}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introducción}
+El ensamblaje de fragmentos de ADN es una tarea fundamental que permite reconstruir secuencias genéticas completas a partir de lecturas cortas. Utilizando un  C para el procesamiento eficiente de datos y Python para la visualización de resultados. Se analizarán los resultados obtenidos.
+
+\section{Implementación}
+Se utilizó C puro para implementar los algoritmos de ensamblaje de ADN, lo que permitió una manipulación eficiente de las estructuras de datos y un control total sobre el proceso de cálculo. La implementación se optimizó para manejar grandes volúmenes de datos de secuencias, asegurando que las ejecuciones fueran rápidas y efectivas. En el \href{https://github.com/DaereanLegrand/DNA-assembly.git}{link} del repositorio de GitHub se encuentran los archivos con la implementación completa.
+
+\section{Resultados}
+Se consiguio verificar el funcionamiento del algoritmo de manera correcta obteniendo una secuencia de consenso con una longitud de 55.
+
+\subsection{Experimentos}
+Se pueden observar en la figura \ref{fig:code1} la salida del programa en C para el ensamblaje de secuencias, en el que se puede evidenciar también como sería ensamblada cada secuencia. En la figura \ref{fig:code2} se observa el camino hamiltoniano obtenido a partir de la salida del programa en C.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{images/exp1.png}
+    \caption{Algoritmo para el ensamblaje para las secuencias de ejemplo.}
+    \label{fig:code1}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{images/exp2.png}
+    \caption{Visualización del camino hamiltoniano.}
+    \label{fig:code2}
+\end{figure}
+
+\section{Análisis y Discusión}
+En esta implementación del algoritmo de ensamblaje de ADN, se obtuvo una secuencia consensuada de 55 nucleótidos, destacando la capacidad del algoritmo para alinear efectivamente múltiples secuencias. La matriz de adyacencia generada muestra cómo se relacionan las diferentes secuencias, lo que es importante para entender las conexiones filogenéticas entre ellas. Estos resultados indican que el algoritmo es útil para procesar datos biológicos, proporcionando información valiosa sobre las relaciones entre las secuencias.
+
+\section{Conclusiones}
+Los resultados demuestran que la implementación del algoritmo de ensamblaje de ADN es eficaz para generar secuencias consensuadas a partir de datos de secuencias alineadas. La eficiencia del algoritmo permite su aplicación en investigaciones genómicas, facilitando el análisis de relaciones evolutivas entre secuencias. Esto resalta la relevancia de utilizar enfoques optimizados en bioinformática para obtener conclusiones significativas a partir de datos complejos.
+
+\end{document}
